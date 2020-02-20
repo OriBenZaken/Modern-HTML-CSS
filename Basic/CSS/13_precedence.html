@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test File</title>
+  <style>
+    /* Precedence order:
+    important flag (h1 color)
+    class (.hello)
+    element styling (h1)
+     */
+    .hello {
+      color: red;
+    }
+
+    h1 {
+      color: blue !important;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="hello">Hello World</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia molestiae architecto veritatis labore. Veritatis animi maiores, quia at possimus ex.</p>
+</body>
+</html>
