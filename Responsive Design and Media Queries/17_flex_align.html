@@ -14,7 +14,7 @@
       justify-content: space-evenly;
       /*  
             OPTIONS:
-            flex-start 
+            flex-start (defalut)
             flex-end 
             center
             space-between
@@ -30,17 +30,18 @@
             flex-end 
             center
             baseline
-            stretch
+            stretch (defalut)
         */
         /* Align items vertical where extra space */
         align-content: space-between;
         /*  
             OPTIONS:
-            flex-start 
+            flex-start (defalut)
             flex-end 
             center
             space-between
             space-around
+            space-evenly
             stretch
         */
     }
@@ -73,6 +74,7 @@
         text-align: center;
         padding: 1rem;
         margin: 0.5rem;
+        /* controls the width when this is a flex-item */
         flex-basis: 200px;
       }
   </style>
