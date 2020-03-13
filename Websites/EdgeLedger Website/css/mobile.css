@@ -33,6 +33,10 @@
     padding: 0.5rem;
   }
 
+  #showcase .showcase-content {
+    margin-top: -1rem;
+  }
+
   #who {
     display: block;
   }
@@ -43,7 +47,7 @@
   }
 
   #clients .items img {
-    width: 80%;
+    width: 100%;
   }
 
   #clients .items div:last-child  {
@@ -57,5 +61,15 @@
   #contact .map {
     height: 200px;
     border-top: 4px solid #333;
+  }
+}
+
+@media(max-height: 568px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1rem;
   }
 }

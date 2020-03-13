@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transitions</title>
+    <style>
+      body {
+        background: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      /* Trasitions happens upon am event */
+      .box {
+        background: white;
+        margin: 2rem;
+        width: 100px;
+        height: 100px;
+        /* transition-property: background, border-radius height width */
+        /* transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in; */
+        /* transition-delay: 2s, 4s; */
+
+        /* Shorthand - property/duration/timing-function/delay */
+        transition: all 2s ease-in-out;
+      }
+
+      .box:hover {
+        background: red;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+      }
+
+      .buttons {
+        display: flex;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        color: #333;
+        background: #ddd;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        min-width: 100px;
+        transition: all 0.3s ease-in-out;
+        margin: 0 1rem;
+      }
+
+      .btn:hover {
+        background-color: crimson;
+        color: #fff;
+        min-width: 120px;
+        margin: 0 3rem;
+      }
+
+      /* 
+        TRANSITIONAL PROPERTIES
+        -Properties that have an identifiable halfway point
+
+        background-color 
+        background-position 
+        border-color 
+        border-width 
+        border-spacing 
+        bottom 
+        color
+        font-size 
+        font-weight 
+        height left 
+        letter-spacing 
+        line-height 
+        margin 
+        max-height 
+        max-width 
+        min-height 
+        min-width 
+        opacity 
+        outline-color 
+        outline-offset 
+        outline-width 
+        padding right 
+        text-indent 
+        text-shadow 
+        top 
+        vertical-align 
+        visibility 
+        width 
+        word-spacing 
+        z-index */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="buttons">
+      <button class="btn">Submit1</button>
+      <button class="btn">Submit2</button>
+      <button class="btn">Submit3</button>
+    </div>
+  </body>
+</html>
