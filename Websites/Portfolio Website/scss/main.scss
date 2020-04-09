@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: $font-stack;
   line-height: 1.6;
   background: #fff;
 }
@@ -321,6 +321,70 @@ p {
 
 }
 
+// Contact Page
+#contact {
+  // Contact A Section
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas: 
+      'name email'
+      'subject phone'
+      'message message';
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .subject-input {
+        grid-area: subject;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      // inputs fonts
+      input[type=text],
+      input[type=email],
+      textarea {
+        font-family: $font-stack;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type=submit] {
+      width: 50%;
+    }
+  }
+
+  // Contact B Section
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  // Contact C Section
+  &-c {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
 // Footer
 #main-footer {
   background: $dark-color;
@@ -347,3 +411,6 @@ p {
     }
   }
 }
+
+// Import media Queries
+@import 'media';
